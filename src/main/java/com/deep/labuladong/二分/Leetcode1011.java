@@ -58,7 +58,7 @@ public class Leetcode1011 {
     private int judge(int[] weights, int x) {
         int days = 0;
         for (int i = 0; i < weights.length; ) {
-            int cap = x;
+            int cap = x;    // 载货量
             while (i < weights.length) {
                 if (weights[i] > cap) {
                     break;
